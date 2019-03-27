@@ -17,7 +17,8 @@ RUN apk add --no-cache --update-cache --update curl ca-certificates \
     && apk add --allow-untrusted /tmp/glibc-bin.apk  \
     &&　wget  http://releases-cdn.verysync.com/releases/v${VERSYNC_VERSION}/verysync-linux-amd64-v${VERSYNC_VERSION}.tar.gz \
     && tar zxvf verysync-linux-amd64-v${VERSYNC_VERSION}.tar.gz
-    && cd verysync-linux-amd64-v${VERSYNC_VERSION}
+
+WORKDIR /verysync-linux-amd64-v${VERSYNC_VERSION}
 
 EXPOSE 8886 22330
 
