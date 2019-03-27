@@ -22,4 +22,4 @@ WORKDIR /verysync-linux-amd64-v${VERSYNC_VERSION}
 
 EXPOSE 8886 22330
 
-CMD ["./verysync","-gui-address 'http://127.0.0.1:8886'"]
+CMD ["./verysync","-gui-address","http://127.0.0.1:8886"]
