@@ -3,7 +3,6 @@ FROM arm32v7/alpine:3.9
 ENV VERSYNC_VERSION 1.0.5
 ENV GLIBC_VERSION 2.26-r0
 # 设置时区
-RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories
 RUN apk add --no-cache tzdata \
     && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
     && echo "Asia/Shanghai" > /etc/timezone \
