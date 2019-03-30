@@ -1,2 +1,2 @@
 # docker_versync
-arm版的versync的docker镜像
+versync的docker镜像
