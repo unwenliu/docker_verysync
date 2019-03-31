@@ -20,7 +20,7 @@ RUN apk add --no-cache --update-cache --update curl ca-certificates \
     && mkdir /data \
     && rm -rf /var/cache/apk/* /tmp/* /var/tmp/* verysync-linux-arm-v${VERSYNC_VERSION}.tar.gz
     
-WORKDIR /verysync-linux-amd64-v${VERSYNC_VERSION}
+WORKDIR /verysync-linux-arm-v${VERSYNC_VERSION}
 
 VOLUME /data
 
