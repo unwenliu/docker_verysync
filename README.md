@@ -17,5 +17,6 @@ services:
       - "8886:8886"
     volumes:
       - "/your_data:/data"
+      - "/etc/localtime:/etc/localtime:ro"
     restart: unless-stopped
 ```
