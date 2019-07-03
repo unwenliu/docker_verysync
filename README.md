@@ -15,6 +15,7 @@ services:
     image: unwenliu/verysync:latest
     ports:
       - "8886:8886"
+      - "22330:22330"
     volumes:
       - "/your_data:/data"
       - "/etc/localtime:/etc/localtime:ro"
