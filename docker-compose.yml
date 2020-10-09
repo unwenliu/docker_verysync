@@ -7,6 +7,6 @@ services:
       - "3000:3000"
       - "8886:8886"
     volumes:
-      - "/root/docker_app/docker_verysync/data:/data"
+      - "/your_data:/data"
       - "/etc/localtime:/etc/localtime:ro"
     restart: unless-stopped
