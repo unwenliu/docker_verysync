@@ -1,6 +1,6 @@
 FROM alpine:3.9
 
-ENV VERSYNC_VERSION 1.1.0-rc3
+ENV VERSYNC_VERSION 1.5.5
 ENV GLIBC_VERSION 2.26-r0
 # 设置时区
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories
